@@ -1,31 +1,34 @@
 body {
-color: white;
+    color: white;
     background-color: #13191a;
-        font-family: "Roboto";
-  font-variation-settings: "wdth" 100;
-  display: flex;
-flex-direction: column;
+    font-family: "Roboto";
+    font-variation-settings: "wdth" 100;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative; 
 }
 
 .navbar {
-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 10px;
     position: absolute;
-top: 0;
+    top: 0;
     margin-top: 30px;
-text-decoration: solid;
+    text-decoration: solid;
 }
 
 .navbar a {
-color: white;
+    color: white;
     font-size: 1.7em;
     text-decoration: none;
     font-weight: 300;
@@ -63,7 +66,9 @@ color: white;
     align-items: center;
     gap: 20px;
     padding: 20px;
-margin-top: 60px;
+    margin-top: 80px; 
+    width: 100%;
+    max-width: 1200px;
 }
 
 .socials {
@@ -72,7 +77,7 @@ margin-top: 60px;
     align-items: center;
     gap: 15px;
     padding: 10px;
-    }
+}
 
 .intro {
     font-size: 1.5em;
@@ -106,6 +111,7 @@ margin-top: 60px;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+
 ul {
     padding-left: 20px;
     width: 90%;
@@ -115,6 +121,39 @@ ul {
 li {
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+article {
+    display: block;
+    background-color: rgba(88, 60, 135, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+article h2 {
+    color: #a67bde;
+    margin-top: 0;
+}
+
+.date {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+article a {
+    color: #a67bde;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
 
 /* Background animation */
@@ -147,7 +186,6 @@ li {
     animation-iteration-count: infinite;
 }
 
-
 .background span:nth-child(0) {
     color: #583C87;
     top: 16%;
@@ -157,6 +195,7 @@ li {
     transform-origin: 11vw 17vh;
     box-shadow: -2vmin 0 1.063936678869314vmin currentColor;
 }
+
 .background span:nth-child(1) {
     color: #583C87;
     top: 63%;
@@ -166,6 +205,7 @@ li {
     transform-origin: 3vw 23vh;
     box-shadow: -2vmin 0 0.7472910916720128vmin currentColor;
 }
+
 .background span:nth-child(2) {
     color: #583C87;
     top: 5%;
@@ -175,6 +215,7 @@ li {
     transform-origin: -1vw 3vh;
     box-shadow: -2vmin 0 0.5560320287844798vmin currentColor;
 }
+
 .background span:nth-child(3) {
     color: #583C87;
     top: 77%;
@@ -184,6 +225,7 @@ li {
     transform-origin: 2vw -7vh;
     box-shadow: -2vmin 0 0.9376463216994544vmin currentColor;
 }
+
 .background span:nth-child(4) {
     color: #583C87;
     top: 96%;
@@ -193,6 +235,7 @@ li {
     transform-origin: -13vw -6vh;
     box-shadow: -2vmin 0 1.0060383843076086vmin currentColor;
 }
+
 .background span:nth-child(5) {
     color: #583C87;
     top: 87%;
@@ -202,6 +245,7 @@ li {
     transform-origin: 13vw -21vh;
     box-shadow: -2vmin 0 0.29892812576989813vmin currentColor;
 }
+
 .background span:nth-child(6) {
     color: #583C87;
     top: 11%;
@@ -211,6 +255,7 @@ li {
     transform-origin: -3vw -14vh;
     box-shadow: 2vmin 0 0.796674229640211vmin currentColor;
 }
+
 .background span:nth-child(7) {
     color: #583C87;
     top: 21%;
@@ -220,6 +265,7 @@ li {
     transform-origin: -3vw 1vh;
     box-shadow: -2vmin 0 1.0722129618071765vmin currentColor;
 }
+
 .background span:nth-child(8) {
     color: #583C87;
     top: 86%;
@@ -229,6 +275,7 @@ li {
     transform-origin: -24vw 4vh;
     box-shadow: 2vmin 0 0.589453321157706vmin currentColor;
 }
+
 .background span:nth-child(9) {
     color: #583C87;
     top: 59%;
@@ -238,6 +285,7 @@ li {
     transform-origin: -16vw -18vh;
     box-shadow: -2vmin 0 0.9410915055033369vmin currentColor;
 }
+
 .background span:nth-child(10) {
     color: #583C87;
     top: 73%;
@@ -247,6 +295,7 @@ li {
     transform-origin: 5vw -3vh;
     box-shadow: 2vmin 0 0.6360017770151274vmin currentColor;
 }
+
 .background span:nth-child(11) {
     color: #583C87;
     top: 38%;
@@ -256,6 +305,7 @@ li {
     transform-origin: -20vw -11vh;
     box-shadow: 2vmin 0 0.7021908944821906vmin currentColor;
 }
+
 .background span:nth-child(12) {
     color: #583C87;
     top: 53%;
@@ -265,6 +315,7 @@ li {
     transform-origin: 7vw -15vh;
     box-shadow: 2vmin 0 0.7854519068199632vmin currentColor;
 }
+
 .background span:nth-child(13) {
     color: #583C87;
     top: 13%;
@@ -274,6 +325,7 @@ li {
     transform-origin: 3vw -1vh;
     box-shadow: 2vmin 0 0.7674897245459482vmin currentColor;
 }
+
 .background span:nth-child(14) {
     color: #583C87;
     top: 53%;
@@ -283,6 +335,7 @@ li {
     transform-origin: -14vw 22vh;
     box-shadow: 2vmin 0 0.9066803990499852vmin currentColor;
 }
+
 .background span:nth-child(15) {
     color: #583C87;
     top: 46%;
@@ -292,6 +345,7 @@ li {
     transform-origin: 4vw 0vh;
     box-shadow: 2vmin 0 0.936646612191782vmin currentColor;
 }
+
 .background span:nth-child(16) {
     color: #583C87;
     top: 100%;
@@ -301,6 +355,7 @@ li {
     transform-origin: 25vw -23vh;
     box-shadow: -2vmin 0 1.2133768815658743vmin currentColor;
 }
+
 .background span:nth-child(17) {
     color: #583C87;
     top: 74%;
@@ -310,6 +365,7 @@ li {
     transform-origin: 4vw 23vh;
     box-shadow: -2vmin 0 0.7037170042326466vmin currentColor;
 }
+
 .background span:nth-child(18) {
     color: #583C87;
     top: 8%;
@@ -319,6 +375,7 @@ li {
     transform-origin: 22vw -11vh;
     box-shadow: -2vmin 0 0.7001457049232718vmin currentColor;
 }
+
 .background span:nth-child(19) {
     color: #583C87;
     top: 28%;
@@ -328,6 +385,7 @@ li {
     transform-origin: 19vw 25vh;
     box-shadow: -2vmin 0 1.1078224159289893vmin currentColor;
 }
+
 .background span:nth-child(20) {
     color: #583C87;
     top: 97%;
@@ -337,6 +395,7 @@ li {
     transform-origin: -4vw 24vh;
     box-shadow: -2vmin 0 0.6553788166140524vmin currentColor;
 }
+
 .background span:nth-child(21) {
     color: #583C87;
     top: 5%;
@@ -346,6 +405,7 @@ li {
     transform-origin: 16vw 21vh;
     box-shadow: -2vmin 0 1.0761489827994892vmin currentColor;
 }
+
 .background span:nth-child(22) {
     color: #583C87;
     top: 30%;
@@ -355,6 +415,7 @@ li {
     transform-origin: 11vw 24vh;
     box-shadow: 2vmin 0 0.8855320140086085vmin currentColor;
 }
+
 .background span:nth-child(23) {
     color: #583C87;
     top: 41%;
@@ -370,12 +431,16 @@ li {
     body {
         height: auto;
         min-height: 100vh;
+        padding-top: 80px; 
     }
     
     .navbar {
-        flex-direction: column;
+        flex-direction: row; 
+        flex-wrap: wrap; 
         gap: 10px;
-        margin-top: 15px;
+        margin-top: 0; 
+        padding: 15px 5px; 
+        background-color: rgba(19, 25, 26, 0.9); 
     }
     
     .navbar a {
@@ -383,8 +448,8 @@ li {
     }
     
     .main {
-        margin-top: 120px;
-        padding: 15px;
+        margin-top: 20px; 
+        padding: 10px;
     }
     
     .intro h1 {
@@ -415,16 +480,22 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        padding-top: 100px;
+    }
+    
     .navbar {
-        margin-top: 10px;
+        flex-direction: column; 
+        margin-top: 0;
     }
     
     .navbar a {
         font-size: 1.1em;
+        padding: 8px 15px;
     }
     
     .main {
-        margin-top: 100px;
+        margin-top: 10px;
     }
     
     .intro h1 {
